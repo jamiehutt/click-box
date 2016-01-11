@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://assets.startribune.com/static/vendor/modernizr/modernizr.js"></script>
+        <script src="http://static.startribune.com/js/pym/pym.min.js"></script>
+        <link rel="stylesheet" href="css/click-box.css">
+        
+        <!-- content specific styles -->
+        
+        <style>
+          li h1 {
+              position: relative;
+              z-index: 2;
+              top: 6%;
+              margin: 0;
+              font-family: 'Whitman Display';
+              font-size: 10vw;
+              font-weight: normal;
+              font-style: normal;
+              letter-spacing: -1px;
+              text-shadow: -2px 2px 6px rgba(0, 0, 0, 0.6);
+              color: #fff;
+              line-height: 90%;
+              text-align: center;
+          }
+          .top-gradient {
+              height: 40%;
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+30,000000+100&0.84+30,0+100 */
+              
+              background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.84) 30%, rgba(0, 0, 0, 0) 100%);
+              /* FF3.6-15 */
+              
+              background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.84) 30%, rgba(0, 0, 0, 0) 100%);
+              /* Chrome10-25,Safari5.1-6 */
+              
+              background: linear-gradient(to bottom, rgba(0, 0, 0, 0.84) 30%, rgba(0, 0, 0, 0) 100%);
+              /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              
+              filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d6000000', endColorstr='#00000000', GradientType=0);
+              /* IE6-9 */
+          }
+          .item0 .fishBox {
+              width: 100%;
+              height: 100%;
+              background-image: url('http://latitudenews.wpengine.netdna-cdn.com/wp-content/uploads/2012/07/dreamstimemedium_25318866.jpg');
+              background-position: bottom center;
+              background-size: cover;
+          }
+          .item1 .fishBox {
+              width: 100%;
+              height: 100%;
+              background-image: url('http://www.howitworksdaily.com/wp-content/uploads/2014/10/Ocellaris_clownfish_Flickr1.jpg');
+              background-position: bottom center;
+              background-size: cover;
+          }
+          .item2 .fishBox {
+              width: 100%;
+              height: 100%;
+              background-image: url('https://allyouneedisbiology.files.wordpress.com/2015/05/atlantic_bluefin_tuna_thunnus_thynnus__oceana_keith_ellenbogen_0.jpg');
+              background-position: bottom center;
+              background-size: cover;
+          }
+          .item3 .fishBox {
+              width: 100%;
+              height: 100%;
+              background-image: url('https://c1.staticflickr.com/3/2765/4259769508_99eee3cca4_b.jpg');
+              background-position: bottom center;
+              background-size: cover;
+          }
+        </style>
+        <script>
+          // configure button text and absolute height https://i.ytimg.com/vi/6eAGqSWxUrk/maxresdefault.jpg
+          // nextText = "Next";
+          // prevText = "Previous";
+          // beginText = "Begin";
+          // againText = "Start again";
+          // maxHeight = 600;
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main>
+          <article>
+            <ul class="clickbox">
+              <li>
+                <div class="fishBox">
+                  <div class="top-gradient"></div>
+                    <h1>
+                      <span style="color:#c4b886";>One</span> fish, <span style="opacity:0;">two fish,<br>three fish, more fish</span>
+                    </h1>
+                  </div>
+              </li>
+              <li>
+                <div class="fishBox">
+                  <div class="top-gradient"></div>
+                    <h1>
+                      One fish, <span style="color:#ff8734";>two</span> fish,<br><span style="opacity:0;">three fish, more fish</span>
+                    </h1>
+                  </div>
+              </li>
+              <li>
+                <div class="fishBox">
+                  <div class="top-gradient"></div>
+                    <h1>
+                      One fish, two fish,<br><span style="color:#00b8cc";>three</span> fish, <span style="opacity:0;">more fish</span>
+                    </h1>
+                  </div>
+              </li>
+              <li>
+                <div class="fishBox">
+                  <div class="top-gradient"></div>
+                    <h1>
+                      One fish, two fish,<br>three fish, <span style="color:#e9c138";>more</span> fish
+                    </h1>
+                  </div>
+              </li>
+            </ul>
+            <div class="controls">
+              <button id="prev">Prev</button>
+              <button id="next">Next</button>
+              <div class="counter">
+                <span class="whichItem"></span> of <span class="numItems"></span>
+              </div>
+            </div>
+          </article>
+        </main>
+        <script type="text/javascript" src="http://assets.startribune.com/static/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="js/click-box.js"></script>
+    </body>
+</html>

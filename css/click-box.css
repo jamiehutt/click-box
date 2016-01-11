@@ -1,0 +1,79 @@
+@import url("http://static.startribune.com/css/normalize.css");
+@import url("http://static.startribune.com/css/strib-fonts.css");
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+article {
+    display: none;
+}
+.clickbox {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.clickbox li {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+.clickbox li:first-child {
+    display: block;
+}
+.controls {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    padding: 12px;
+    background: url(http://stmedia.startribune.com/designimages/trans_fff_20.png);
+    border-radius: 3px;
+}
+.counter,
+button {
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    margin: 0 auto;
+}
+.counter {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: white;
+    display: inline-block;
+}
+button {
+    background-color: #7bcc5a;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    background-color: #59c03d;
+}
+button:active {
+    background-color: #000;
+}
+#prev {
+    margin-right: 6px;
+    display: none;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    
+    display: table;
+    /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
